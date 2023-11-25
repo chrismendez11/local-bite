@@ -1,7 +1,3 @@
-<script setup>
-
-</script>
-
 <template>
     <nav>
         <div class="nav-logo">
@@ -10,6 +6,3 @@
         </div>
     </nav>
 </template>
-
-<style lang="scss" scoped>
-</style>
