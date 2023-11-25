@@ -38,9 +38,10 @@ nav .nav-logo {
 nav .nav-logo .fa-map-location-dot {
   font-size: 3.2rem;
 }
-nav .nav-logo span {
+nav .nav-logo .link {
   font-size: 2.4rem;
   letter-spacing: 5px;
+  color: #ededed;
 }
 
 .home-main {
