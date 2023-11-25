@@ -1,0 +1,62 @@
+.home-main {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    gap: 40px;
+  .title {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    .title-text {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      gap: 10px;
+      h1 {
+        font-size: 4.0rem;
+        @include tl {
+            font-size: 6.0rem;
+        }
+      }
+      p {
+        font-size: 1.6rem;
+        font-weight: 400;
+        @include tl {
+            font-size: 2.4rem;
+        }
+      }
+    }
+  }
+  .home-button {
+    font-size: 1.4rem;
+    font-weight: 500;
+    padding: 10px;
+    border: 1px solid $text-color;
+    background-color: $primary-color;
+    color: $text-color;
+    border-radius: 0;
+    cursor: pointer;
+    @include tl {
+        font-size: 2.0rem;
+    }
+    transition: transform 200ms ease;
+    &:hover {
+        opacity: 0.9;
+        transform: scale(1.05);
+        transition: transform 200ms ease;
+    }
+  }
+  }
+  .fa-flip {
+    font-size: 10rem;
+    @include ml {
+      font-size: 12rem;
+    }
+    @include tl {
+        font-size: 20rem;
+    }
+  }

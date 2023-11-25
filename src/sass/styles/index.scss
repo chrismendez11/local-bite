@@ -1,0 +1,14 @@
+// colors
+@import './colors';
+
+// base styles and variables
+@import './base';
+
+// breakpoints
+@import './breakpoints';
+
+// components
+@import './components/shared/NavBar';
+@import './components/HomeView';
+@import './components/RestaurantsView';
+@import './components/RestaurantCard';

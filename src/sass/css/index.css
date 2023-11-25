@@ -1,0 +1,233 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  color: #ededed;
+  background-color: #121212;
+  font-family: "Roboto", sans-serif;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+a {
+  text-decoration: none;
+}
+
+nav {
+  width: 100%;
+  height: 60px;
+  border-bottom: 1px solid #ededed;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+}
+nav .nav-logo {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+nav .nav-logo .fa-map-location-dot {
+  font-size: 3.2rem;
+}
+nav .nav-logo span {
+  font-size: 2.4rem;
+  letter-spacing: 5px;
+}
+
+.home-main {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  gap: 40px;
+}
+.home-main .title {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.home-main .title .title-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  gap: 10px;
+}
+.home-main .title .title-text h1 {
+  font-size: 4rem;
+}
+@media (min-width: 768px) {
+  .home-main .title .title-text h1 {
+    font-size: 6rem;
+  }
+}
+.home-main .title .title-text p {
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+@media (min-width: 768px) {
+  .home-main .title .title-text p {
+    font-size: 2.4rem;
+  }
+}
+.home-main .home-button {
+  font-size: 1.4rem;
+  font-weight: 500;
+  padding: 10px;
+  border: 1px solid #ededed;
+  background-color: #121212;
+  color: #ededed;
+  border-radius: 0;
+  cursor: pointer;
+  transition: transform 200ms ease;
+}
+@media (min-width: 768px) {
+  .home-main .home-button {
+    font-size: 2rem;
+  }
+}
+.home-main .home-button:hover {
+  opacity: 0.9;
+  transform: scale(1.05);
+  transition: transform 200ms ease;
+}
+
+.fa-flip {
+  font-size: 10rem;
+}
+@media (min-width: 425px) {
+  .fa-flip {
+    font-size: 12rem;
+  }
+}
+@media (min-width: 768px) {
+  .fa-flip {
+    font-size: 20rem;
+  }
+}
+
+.restaurants-content {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+.restaurants-content .restaurants-header {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.restaurants-content .restaurants-header p {
+  font-size: 2.4rem;
+  font-weight: 500;
+}
+.restaurants-content .restaurants-header .restaurants-header-filters {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.restaurants-content .restaurants-main {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  grid-auto-rows: 475px;
+  justify-items: center;
+  gap: 40px;
+}
+
+.card {
+  min-width: 280px;
+  max-width: 300px;
+  border: 1px solid #ededed;
+  transition: transform 400ms ease;
+  cursor: pointer;
+}
+.card:hover {
+  opacity: 0.9;
+  transform: scale(1.03);
+  transition: transform 400ms ease;
+}
+.card header {
+  width: 100%;
+  height: 50%;
+  max-height: 250px;
+}
+.card .card__main {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  height: 50%;
+  justify-content: center;
+}
+.card .card__main .card__title {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.card .card__main .card__title h2 {
+  font-size: 2.4rem;
+  letter-spacing: 2px;
+}
+.card .card__main .card__title .card__rating {
+  display: flex;
+  gap: 5px;
+}
+.card .card__main .card__title .card__rating span {
+  font-size: 1.4rem;
+}
+.card .card__main .card__title .card__rating .card__starts {
+  display: flex;
+  gap: 2px;
+  margin-top: 2px;
+}
+.card .card__main .card__title .card__rating .fa-star {
+  font-size: 1rem;
+}
+.card .card__main .card__info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.card .card__main .card__info .card__info-row {
+  display: flex;
+  gap: 10px;
+}
+.card .card__main .card__info .card__info-row .fa-solid {
+  font-size: 1.6rem;
+}
+.card .card__main .card__info .card__info-row p {
+  font-size: 1.6rem;
+}
+.card .card__main .card__button {
+  width: 200px;
+  height: 40px;
+  margin: 0 auto;
+}
+.card .card__main .card__button button {
+  width: 100%;
+  height: 100%;
+  border-radius: 0;
+  border: 1px solid #ededed;
+  cursor: pointer;
+  font-size: 1.6rem;
+  font-weight: 500;
+  background-color: #121212;
+  color: #ededed;
+  font-family: "Roboto", sans-serif;
+}

@@ -1,0 +1,1 @@
+export const defaultCardImg = 'https://www.creativefabrica.com/wp-content/uploads/2018/10/Chef-restaurant-logo-by-DEEMKA-STUDIO-4.jpg'

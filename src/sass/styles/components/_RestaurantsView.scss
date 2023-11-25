@@ -1,0 +1,32 @@
+.restaurants-content {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    .restaurants-header {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        p {
+            font-size: 2.4rem;
+            font-weight: 500;
+        }
+        .restaurants-header-filters {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+    }
+    .restaurants-main {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+        grid-auto-rows: 475px;
+        justify-items: center;
+        gap: 40px;
+    }
+}
